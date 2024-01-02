@@ -2,10 +2,9 @@
 	"cards": {
 		"prompts": [
 			"Would you",
-			"Would you let your kids",
 			"Is it ethical to",
-			"Would you judge someone if they",
-			"Would you care if your kids"
+			"Would you let your kids",
+			"Would you judge someone if they"
 		],
 		"prompt_ideas": [
 			"How old should someone be to"
@@ -14,7 +13,8 @@
 			"use AI to write wedding vows",
 			"use AI to write a Christmas wishlist",
 			"watch AI generated porn",
-			"eat lab-grown human flesh"
+			"eat lab-grown human flesh",
+			"create an alternate digital personality"
 		]
 	},
 	"license": "Copyright (c) 2023 Cory Evan Wright. Licensed under the MIT License. See https://github.com/BeSublime/cardfork for more information."
