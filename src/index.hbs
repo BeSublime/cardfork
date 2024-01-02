@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>Card Fork - A Silly Conversation Starter About Technology Ethics</title>
+	<meta name="description" content="Prompt and topic cards to spark conversations around AI, crypto, and technology ethics, inspired by the Hard Fork podcast.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="Card Fork">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.cardfork.com">
+	<meta property="og:image" content="img/card_fork-logo-square.png">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="img/card_fork-logo-square.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta name="theme-color" content="#FFB500">
+</head>
+
+<body class="bg-cfyellow py-8">
+
+	<header class="flex flex-col items-center justify-center pb-8">
+		<div class="lg:w-2/5 text-center">
+			<picture class="pb-8 inline-block">
+				<source srcset="img/card_fork-emblem@2x.png?as=webp&width=1600" width="600" media="(min-width: 1024px)">
+				<img src="img/card_fork-logo.svg" width="200" alt="Card Fork logo containing an circuit-inspired abstract yellow sprocket design.">
+				</picture>
+			<h1 class="sr-only">
+				Card Fork
+			</h1>
+			<h2 class="font-thin text-xl">
+				Prompt and topic cards to spark conversations around AI, crypto, and technology ethics, inspired by the <a href="https://www.nytimes.com/column/hard-fork">Hard Fork</a> podcast and their "Hard Questions" segment.
+			</h2>
+		</div>
+	</header>
+
+	<main class="container mx-auto px-12 pb-8">
+		<h3 class="pl-8 text-2xl inline-block">Prompt Cards</h3>
+		{{!-- TODO: add card style selector? <h3 class="text-2xl text-right pr-8">Style: 🔲 🔲 🔲</h3> --}}
+		<div class="cards flex flex-wrap">
+			{{!-- TODO: add random example card sets at top of page --}}
+			{{#each cards.cards.prompts}}
+				<article class="card prompt w-1/4 my-4 px-8">
+					<div class="p-12 h-96 bg-black text-white text-2xl font-bold rounded-2xl">
+						<div class="card-text">
+							{{this}}&hellip;
+						</div>
+					</div>
+				</article>
+			{{/each}}
+		</div>
+
+		<h3 class="pl-8 text-2xl">Topic Cards</h3>
+		<div class="cards flex flex-wrap">
+			{{!-- TODO: add random example card sets at top of page --}}
+			{{#each cards.cards.topics}}
+				<article class="card prompt w-1/4 my-4 px-8">
+					<div class="p-12 h-96 bg-white text-black text-2xl font-bold rounded-2xl">
+						<div class="card-text">
+							{{this}}?
+						</div>
+					</div>
+				</article>
+			{{/each}}
+		</div>
+
+	</main>
+
+	<footer class="container mx-auto w-1/2 text-yellow-800 text-sm text-center">
+		{{!-- TODO: include all content in json? or some in html only? --}}
+		<div class="colophon flex justify-between pb-4">
+			<span>Made with &hearts; in Kansas City.</span>
+			<span>&copy; 2023 Cory Evan Wright.</span>
+		</div>
+		<p>Card Fork is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Hard Fork podcast or the New York Times, or any of its subsidiaries or affiliates.</p>
+	</footer>
+
+	<script src="js/plugins.js"></script>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6B55ZFYB3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-K6B55ZFYB3');
+	</script>
+</body>
+
+</html>
