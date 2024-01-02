@@ -24,7 +24,7 @@
 <body class="bg-cfyellow py-8">
 
 	<header class="flex flex-col items-center justify-center pb-8">
-		<div class=" w-4/5 lg:w-2/5 text-center">
+		<div class="w-11/12 lg:w-2/5 text-center">
 			<picture class="pb-8 inline-block">
 				<source srcset="img/card_fork-emblem@2x.png?as=webp&width=1600" width="600" media="(min-width: 1024px)">
 				<img src="img/card_fork-logo.svg" width="200" alt="Card Fork logo containing an circuit-inspired abstract yellow sprocket design.">
@@ -39,7 +39,7 @@
 	</header>
 
 	<main class="container mx-auto px-2 md:px-4 xl:px-12 pb-8">
-		<h3 class="pl-8 text-2xl inline-block">Prompt Cards</h3>
+		<h3 class="px-2 md:px-4 xl:px-8 mb-2 text-2xl">Prompt Cards</h3>
 		{{!-- TODO: add card style selector? <h3 class="text-2xl text-right pr-8">Style: 🔲 🔲 🔲</h3> --}}
 		<div class="cards flex flex-wrap">
 			{{!-- TODO: add random example card sets at top of page --}}
@@ -54,7 +54,7 @@
 			{{/each}}
 		</div>
 
-		<h3 class="pl-8 text-2xl">Topic Cards</h3>
+		<h3 class="px-2 md:px-4 xl:px-8 mb-2 text-2xl">Topic Cards</h3>
 		<div class="cards flex flex-wrap">
 			{{!-- TODO: add random example card sets at top of page --}}
 			{{#each cards.cards.topics}}
@@ -70,11 +70,11 @@
 
 	</main>
 
-	<footer class="container mx-auto w-1/2 text-yellow-800 text-sm text-center">
+	<footer class="container mx-auto w-11/12 md:w-3/4 xl:w-1/2 text-yellow-800 text-sm text-center">
 		{{!-- TODO: include all content in json? or some in html only? --}}
-		<div class="colophon flex justify-between pb-4">
-			<span>Made with &hearts; in Kansas City.</span>
-			<span>&copy; 2023 Cory Evan Wright.</span>
+		<div class="colophon flex flex-wrap justify-center justify-between pb-4">
+			<div class="w-full md:w-auto mx-auto md:mx-2 text-center">Made with &hearts; (and a smidge of AI) in Kansas City.</div>
+			<div class="w-full md:w-auto mx-auto md:mx-2 text-center">&copy; 2023 <a href="https://coryevan.com">Cory Evan Wright</a></div>
 		</div>
 		<p>Card Fork is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Hard Fork podcast or the New York Times, or any of its subsidiaries or affiliates.</p>
 	</footer>
