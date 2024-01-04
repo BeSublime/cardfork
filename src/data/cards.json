@@ -72,7 +72,7 @@
 				"episodeURL": "https://www.nytimes.com/2023/05/05/podcasts/hard-fork-bluesky-ai-jobs.html"
 			},
 			{
-				"text": "shoplift three pairs of underwear from Uniqlo",
+				"text": "shoplift 3 pairs of underwear from Uniqlo",
 				"source": "Hard Fork host",
 				"episodeTitle": "Bluesky Has the Juice, A.I. Jobs Apocalypse and Hard Questions",
 				"episodeDate": "2023-05-05",
@@ -137,6 +137,10 @@
 				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
 				"episodeDate": "2023-12-23",
 				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "trust AI to make important decisions in your workplace",
+				"source": "AI"
 			},
 			{
 				"text": "have cameras & microphones in common areas of the home",

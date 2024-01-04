@@ -9,9 +9,28 @@ a {
 	@apply mb-8;
 }
 
+@media print {
+	.card, .card > div {
+		break-inside: avoid;
+	}
+}
+
 .card > div {
 	@apply shadow-lg;
 	@apply print:shadow-none print:border print:border-solid print:border-black print:m-1;
+}
+
+.card.prompt > div {
+	background-image: url(../img/pattern-07.png);
+	background-repeat: repeat;
+	background-size: 90%;
+}
+
+.card.topic > div {
+	background-image: url(../img/pattern-17.png);
+	background-repeat: repeat;
+	background-size: 80%;
+	background-position-y: 160px;
 }
 
 h2, h3 {
