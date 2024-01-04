@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Cory Evan Wright -- Development, Design -- https://www.coryevan.com
 
 # THANKS
 
-    <name>
+    Casey Newton
+	Kevin Roose
+	The Hard Fork podcast production team
+	Card Against Humanity
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Parcel, Tailwind CSS
