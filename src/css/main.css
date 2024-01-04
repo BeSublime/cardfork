@@ -11,4 +11,9 @@ a {
 
 .card > div {
 	@apply shadow-lg;
+	@apply print:shadow-none print:border print:border-solid print:border-black print:m-1;
+}
+
+h2, h3 {
+	@apply text-2xl mb-4;
 }

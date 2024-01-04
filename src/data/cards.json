@@ -10,11 +10,59 @@
 			"How old should someone be to"
 		],
 		"topics": [
-			"use AI to write wedding vows",
-			"use AI to write a Christmas wishlist",
-			"watch AI generated porn",
-			"eat lab-grown human flesh",
-			"create an alternate digital personality"
+			{
+				"text": "use AI to write wedding vows",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "use AI to write a Christmas wishlist",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "watch AI generated porn",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "eat lab-grown human flesh",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "create an alternate digital personality",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "use AI to do freelance copywriting",
+				"source": "reddit via Hard Fork",
+				"episodeTitle": "Bluesky Has the Juice, A.I. Jobs Apocalypse and Hard Questions",
+				"episodeDate": "2023-05-05",
+				"episodeURL": "https://www.nytimes.com/2023/05/05/podcasts/hard-fork-bluesky-ai-jobs.html"
+			},
+			{
+				"text": "live in a city where AI is used for surveillance and law enforcement",
+				"source": "AI"
+			},
+			{
+				"text": "use AI to complete a school assignment",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			}
 		]
 	},
 	"license": "Copyright (c) 2023 Cory Evan Wright. Licensed under the MIT License. See https://github.com/BeSublime/cardfork for more information."

@@ -21,52 +21,109 @@
 	<meta name="theme-color" content="#FFB500">
 </head>
 
-<body class="bg-cfyellow py-8">
+<body class="bg-cfyellow print:bg-none py-8">
 
-	<header class="flex flex-col items-center justify-center pb-8">
-		<div class="w-11/12 lg:w-2/5 text-center">
-			<picture class="pb-8 inline-block">
+	{{#eq NODE_ENV "development"}}
+	<div class="breakpoints flex-col fixed m-3 text-slate-500 print:hidden">
+		Mobile
+		<div class="hidden sm:block">
+			Small
+		</div>
+		<div class="hidden md:block">
+			Medium
+		</div>
+		<div class="hidden lg:block">
+			Large
+		</div>
+		<div class="hidden xl:block">
+			XL
+		</div>
+		<div class="hidden 2xl:block">
+			2XL
+		</div>
+	</div>
+	{{/eq}}
+
+	<header class="flex flex-col items-center justify-center mb-8 print:hidden">
+		<div class="w-11/12 md:w-3/5 xl:w-1/2 text-center">
+			<picture class="mb-8 inline-block">
 				<source srcset="img/card_fork-emblem@2x.png?as=webp&width=1600" width="600" media="(min-width: 1024px)">
 				<img src="img/card_fork-logo.svg" width="200" alt="Card Fork logo containing an circuit-inspired abstract yellow sprocket design.">
 				</picture>
 			<h1 class="sr-only">
 				Card Fork
 			</h1>
-			<h2 class="font-thin text-xl">
+			<h2 class="font-thin">
 				Prompt and topic cards to spark conversations around AI, crypto, and technology ethics, inspired by the <a href="https://www.nytimes.com/column/hard-fork">Hard Fork</a> podcast and their "Hard Questions" segment.
 			</h2>
 		</div>
 	</header>
 
-	<main class="container mx-auto px-2 md:px-4 xl:px-12 pb-8">
-		<h3 class="px-2 md:px-4 xl:px-8 mb-2 text-2xl">Prompt Cards</h3>
-		{{!-- TODO: add card style selector? <h3 class="text-2xl text-right pr-8">Style: 🔲 🔲 🔲</h3> --}}
-		<div class="cards flex flex-wrap">
-			{{!-- TODO: add random example card sets at top of page --}}
-			{{#each cards.cards.prompts}}
-				<article class="card prompt w-1/2 md:w-1/3 2xl:w-1/4 my-1 md:my-2 xl:my-4 px-1 md:px-4 xl:px-8">
-					<div class="p-6 md:p-8 xl:p-12 h-64 md:h-72 lg:h-96 bg-black text-white text-xl xl:text-2xl font-bold rounded-2xl">
-						<div class="card-text">
-							{{this}}&hellip;
-						</div>
-					</div>
-				</article>
-			{{/each}}
-		</div>
+	<main class="container mx-auto px-2 md:px-4 xl:px-12 mb-8">
+		<section id="instructions" class="mb-8 w-full md:w-1/2 px-2 md:px-4 xl:px-8 float-left">
+			<h2 class="">Instructions</h2>
+			<p>
+				Shuffle the prompt cards and topic cards separately, and form two decks. Turn over one of each,
+				and use the resulting combination as a conversation starter. If the prompt and topic don't make sense,
+				simply turn over another prompt card. When you reach the end of the prompt deck, re-shuffle it and continue.
+			</p>
+		</section>
 
-		<h3 class="px-2 md:px-4 xl:px-8 mb-2 text-2xl">Topic Cards</h3>
-		<div class="cards flex flex-wrap">
-			{{!-- TODO: add random example card sets at top of page --}}
-			{{#each cards.cards.topics}}
-				<article class="card topic w-1/2 md:w-1/3 2xl:w-1/4 my-1 md:my-2 xl:my-4 px-1 md:px-4 xl:px-8">
-					<div class="p-6 md:p-8 xl:p-12 h-64 md:h-72 lg:h-96 bg-white text-black text-xl xl:text-2xl font-bold rounded-2xl">
-						<div class="card-text">
-							{{this}}?
+		{{!-- <section id="example-set" class="mb-8 w-full md:w-1/2 px-2 md:px-4 xl:px-8 float-left">
+			<h2 class="">Example Set</h2>
+		</section> --}}
+
+		<section class="clear-both">
+			<h3 class="px-2 md:px-4 xl:px-8">Prompt Cards</h3>
+			{{!-- TODO: add card style selector? <h3 class="text-2xl text-right pr-8">Style: 🔲 🔲 🔲</h3> --}}
+			<div class="cards flex flex-wrap">
+				{{!-- TODO: add random example card sets at top of page --}}
+				{{#each cards.cards.prompts}}
+					<article class="card prompt w-1/2 md:w-1/3 2xl:w-1/4 mb-1 mt-1 md:mb-2 xl:mb-4 px-1 md:px-4 xl:px-8 print:p-1">
+						<div class="p-6 md:p-8 xl:p-12 h-64 md:h-72 lg:h-96 bg-black text-white text-xl xl:text-2xl font-bold rounded-2xl print:bg-black print:w-52 print:h-32 print:text-xl print:p-4">
+							<div class="card-text">
+								{{this}}&hellip;
+							</div>
 						</div>
-					</div>
-				</article>
-			{{/each}}
-		</div>
+					</article>
+				{{/each}}
+			</div>
+
+			<h3 class="px-2 md:px-4 xl:px-8">Topic Cards</h3>
+			<div class="cards flex flex-wrap">
+				{{!-- TODO: add random example card sets at top of page --}}
+				{{#each cards.cards.topics}}
+					<article class="card topic w-1/2 md:w-1/3 2xl:w-1/4 mb-1 mt-1 md:mb-2 xl:mb-4 px-1 md:px-4 xl:px-8">
+						<div class="p-6 md:p-8 xl:p-12 h-64 md:h-72 lg:h-96 bg-white rounded-2xl relative">
+							<div class="card-text text-black text-xl xl:text-2xl font-bold">
+								{{this.text}}?
+							</div>
+							<div class="source hidden sm:block group absolute bottom-2 right-2 p-2">
+								<div class="icon float-left">
+									{{#eq this.source "AI"}}
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-gray-600"><title>Generated by AI</title><path fill-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z" clip-rule="evenodd" /></svg>
+									{{/eq}}
+									{{#contains this.source "Hard Fork"}}
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-gray-600"><path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" /><path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" /></svg>
+									{{/contains}}
+								</div>
+								{{#contains this.source "Hard Fork"}}
+								<div class="episode-link text-sm italic text-gray-600 print:hidden overflow-hidden whitespace-nowrap text-left w-0 group-hover:w-28 transition-all duration-500 ease-in-out">
+									{{#if this.episodeDate}}
+									<a class="date no-underline hover:underline ml-2"
+									   href="{{this.episodeURL}}"
+									   title="{{this.episodeTitle}}">
+										{{moment this.episodeDate format="MMM Do, YYYY"}}
+									</a>
+									{{/if}}
+								</div>
+								{{/contains}}
+							</div>
+						</div>
+					</article>
+				{{/each}}
+			</div>
+		</section>
 
 	</main>
 
@@ -74,9 +131,10 @@
 		{{!-- TODO: include all content in json? or some in html only? --}}
 		<div class="colophon flex flex-wrap justify-center justify-between pb-4">
 			<div class="w-full md:w-auto mx-auto md:mx-2 text-center">Made with &hearts; (and a smidge of AI) in Kansas City.</div>
+			<div class="w-full md:w-auto mx-auto md:mx-2 text-center">Source available on <a href="https://github.com/BeSublime/cardfork">GitHub</a>.</div>
 			<div class="w-full md:w-auto mx-auto md:mx-2 text-center">&copy; 2023 <a href="https://coryevan.com">Cory Evan Wright</a></div>
 		</div>
-		<p>Card Fork is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Hard Fork podcast or the New York Times, or any of its subsidiaries or affiliates.</p>
+		<p class="disclaimer">Card Fork is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Hard Fork podcast or the New York Times, or any of its subsidiaries or affiliates.</p>
 	</footer>
 
 	<script src="js/plugins.js"></script>
