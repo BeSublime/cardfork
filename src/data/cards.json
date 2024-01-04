@@ -4,7 +4,8 @@
 			"Would you",
 			"Is it ethical to",
 			"Would you let your kids",
-			"Would you judge someone if they"
+			"Would you judge someone if they",
+			"When will it seem normal to"
 		],
 		"prompt_ideas": [
 			"How old should someone be to"
@@ -62,7 +63,147 @@
 				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
 				"episodeDate": "2023-12-23",
 				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "sell merch containing AI artwork",
+				"source": "Stable Diffusion subreddit via Hard Fork",
+				"episodeTitle": "Bluesky Has the Juice, A.I. Jobs Apocalypse and Hard Questions",
+				"episodeDate": "2023-05-05",
+				"episodeURL": "https://www.nytimes.com/2023/05/05/podcasts/hard-fork-bluesky-ai-jobs.html"
+			},
+			{
+				"text": "shoplift three pairs of underwear from Uniqlo",
+				"source": "Hard Fork host",
+				"episodeTitle": "Bluesky Has the Juice, A.I. Jobs Apocalypse and Hard Questions",
+				"episodeDate": "2023-05-05",
+				"episodeURL": "https://www.nytimes.com/2023/05/05/podcasts/hard-fork-bluesky-ai-jobs.html"
+			},
+			{
+				"text": "take a self-driving car to the airport",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Bankman-Fried’s Arrest, 2023 Predictions and Your Questions Answered",
+				"episodeDate": "2022-12-16",
+				"episodeURL": "https://www.nytimes.com/2022/12/16/podcasts/bankman-frieds-arrest-2023-predictions-and-your-questions-answered.html"
+			},
+			{
+				"text": "attend a concert in a metaverse",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Bankman-Fried’s Arrest, 2023 Predictions and Your Questions Answered",
+				"episodeDate": "2022-12-16",
+				"episodeURL": "https://www.nytimes.com/2022/12/16/podcasts/bankman-frieds-arrest-2023-predictions-and-your-questions-answered.html"
+			},
+			{
+				"text": "take a hike in a metaverse",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Bankman-Fried’s Arrest, 2023 Predictions and Your Questions Answered",
+				"episodeDate": "2022-12-16",
+				"episodeURL": "https://www.nytimes.com/2022/12/16/podcasts/bankman-frieds-arrest-2023-predictions-and-your-questions-answered.html"
+			},
+			{
+				"text": "trust an AI system's medical diagnosis",
+				"source": "AI"
+			},
+			{
+				"text": "get a private helicopter as an illegally ferry out of a festival in the desert",
+				"source": "Hard Fork host",
+				"episodeTitle": "Escape From Burning Man + Musk vs. the A.D.L. + Listener Questions",
+				"episodeDate": "2023-08-23",
+				"episodeURL": "https://www.nytimes.com/2023/09/08/podcasts/hard-fork-burning-man-musk-adl.html"
+			},
+			{
+				"text": "make an entirely AI-generated YouTube channel, including the logo, scripts, and host",
+				"source": "Hard Fork listener Hank Green",
+				"episodeTitle": "Escape From Burning Man + Musk vs. the A.D.L. + Listener Questions",
+				"episodeDate": "2023-08-23",
+				"episodeURL": "https://www.nytimes.com/2023/09/08/podcasts/hard-fork-burning-man-musk-adl.html"
+			},
+			{
+				"text": "invite an AI chatbot to a group chat",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Escape From Burning Man + Musk vs. the A.D.L. + Listener Questions",
+				"episodeDate": "2023-08-23",
+				"episodeURL": "https://www.nytimes.com/2023/09/08/podcasts/hard-fork-burning-man-musk-adl.html"
+			},
+			{
+				"text": "collect employees’ biometric data",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "let an employer collect personal biometric data",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+				"episodeDate": "2023-12-23",
+				"episodeURL": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html"
+			},
+			{
+				"text": "have cameras & microphones in common areas of the home",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Escape From Burning Man + Musk vs. the A.D.L. + Listener Questions",
+				"episodeDate": "2023-08-23",
+				"episodeURL": "https://www.nytimes.com/2023/09/08/podcasts/hard-fork-burning-man-musk-adl.html"
+			},
+			{
+				"text": "lobby for the ethical use or development of AI",
+				"source": "Hard Fork listener",
+				"episodeTitle": "Escape From Burning Man + Musk vs. the A.D.L. + Listener Questions",
+				"episodeDate": "2023-08-23",
+				"episodeURL": "https://www.nytimes.com/2023/09/08/podcasts/hard-fork-burning-man-musk-adl.html"
+			},
+			{
+				"text": "train Stable Diffusion using your/their likeness to generate promotional materials or photos",
+				"source": "Hard Fork listener",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
+			},
+			{
+				"text": "raise employees’ output expectations if they are allowed to use AI to assist in their work",
+				"source": "Hard Fork listener",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
+			},
+			{
+				"text": "generate a synthetic version of a someone else’s voice to converse with",
+				"source": "Hard Fork listener",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
+			},
+			{
+				"text": "have AI generate love letters from a crush",
+				"source": "Hard Fork guest",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
+			},
+			{
+				"text": "use AI to generate prayers",
+				"source": "Hard Fork listener",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
+			},
+			{
+				"text": "use AI to generate a Mother’s Day card",
+				"source": "Hard Fork listener",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
+			},
+			{
+				"text": "tell a mom that AI was used to generate their Mother’s Day card",
+				"source": "Hard Fork listener",
+				"episodeTitle": "A.I.’s Inner Conflict, Nvidia Joins the Trillion-Dollar Club, and Hard Questions",
+				"episodeDate": "2023-06-02",
+				"episodeURL": "https://www.nytimes.com/2023/06/02/podcasts/hard-fork-chatgpt-nvidia.html"
 			}
+		],
+		"topic_ideas": [
+			"invest retirement funds in cryptocurrency"
 		]
 	},
 	"license": "Copyright (c) 2023 Cory Evan Wright. Licensed under the MIT License. See https://github.com/BeSublime/cardfork for more information."
